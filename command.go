@@ -176,7 +176,7 @@ func (c Command) String() string {
 	return buf.String()
 }
 
-func NewCommand(name string, arg ...string) *Command {
+func New(name string, arg ...string) *Command {
 	return &Command{
 		cmd:    exec.Command(name, arg...),
 		output: new(bytes.Buffer),

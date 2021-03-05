@@ -9,14 +9,14 @@ $ go get github.com/chao77977/simpleCommand
 ### 1. Run the command and print the output on console.
 Example,
 ```
-cmd := simpleCommand.Newcommand("ping", "baidu.com", "-c 3")
+cmd := simpleCommand.New("ping", "baidu.com", "-c 3")
 r, o, err := cmd.RunWithOutput()
 fmt.Println(cmd)
 ```
-r: return value of command
-o: strings of output
-e: error
-fmt.Println(cmd):
+* r: return value of command
+* o: strings of output
+* e: error
+
 ```
 Exec the command: /usr/bin/ping baidu.com -c 3
 Status          : completed
@@ -49,17 +49,17 @@ Example,
 cmd := simpleCommand.Newcommand("ping", "baidu.com", "-c 3")
 r, o, err := cmd.Run()
 ```
-r: return value of command
-o: strings of output
-e: error
+* r: return value of command
+* o: strings of output
+* e: error
 
-### 2. Run the command with timeout.
+### 3. Run the command with timeout.
 Example,
 ```
 cmd := simpleCommand.Newcommand("ping", "baidu.com", "-c 3")
 cmd.SetTimeoutWithSecond(1)
 r, o, err := cmd.Run()
 ```
-r: return value of command
-o: strings of output
-e: error
+* r: return value of command
+* o: strings of output
+* e: error
