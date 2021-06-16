@@ -46,7 +46,7 @@ rtt min/avg/max/mdev = 5.000/5.017/5.042/0.083 ms
 ### 2. Run the command and silent on console.
 Example,
 ```
-cmd := simpleCommand.Newcommand("ping", "baidu.com", "-c 3")
+cmd := simpleCommand.New("ping", "baidu.com", "-c 3")
 r, o, err := cmd.Run()
 ```
 * r: return value of command
