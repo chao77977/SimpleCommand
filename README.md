@@ -56,7 +56,7 @@ r, o, err := cmd.Run()
 ### 3. Run the command with timeout.
 Example,
 ```
-cmd := simpleCommand.Newcommand("ping", "baidu.com", "-c 3")
+cmd := simpleCommand.New("ping", "baidu.com", "-c 3")
 cmd.SetTimeoutWithSecond(1)
 r, o, err := cmd.Run()
 ```
